@@ -45,12 +45,12 @@
 <h2 id="21-단어-사전적인-의미와-공학적-의미">2.1. 단어: 사전적인 의미와 공학적 의미 </h2>
 <ol>
 <li>부재</li>
-<li>교차점, 절점, 관절, 핀, Joint, 힌지(경첩, 꺽쇠)</li>
+<li>교차점, 절점, 관절, 핀, Joint, 힌지(hinge, 경첩, 꺽쇠)</li>
 <li>반력</li>
 <li>내력</li>
 <li>하중</li>
 <li>강성, 강체</li>
-<li>축력:</li>
+<li>축력</li>
 <li>인장력과 압축력</li>
 <li>(휨)모멘트 : 휘는 힘</li>
 <li>축방향력(Axial Force): 오직 부재의 길이 방향으로만 작용하는 힘, 트러스에는 축방향력만이 내력으로 발생한다.</li>
@@ -82,7 +82,7 @@
 </tr>
 <tr>
 <td>2</td>
-<td>교차점, 절점, 관절, pin, Joint</td>
+<td>교차점, 절점, 관절, pin, Joint, 힌지(hinge, 경첩, 꺽쇠)</td>
 <td>(交 사귈 교 叉 갈래 차 點 점 점), (節 마디 절 點 점 점), (關 관계할 관 節 마디 절)</td>
 <td>두개의 재료가 <strong>교차</strong>하는 점</td>
 <td>joint</td>
@@ -172,7 +172,7 @@
 </tr>
 <tr>
 <td>12</td>
-<td>부재응력</td>
+<td>부재응력(부재력)</td>
 <td>應 응할 응 力 힘 력(역)</td>
 <td>외력에 저항하는 힘(저항하여 원형을 지키려는 힘)</td>
 <td>member force 또는 stress resulant</td>
@@ -286,13 +286,13 @@
 <li>경우 1: 한 절점에 2개의 부재가 연결되어 있고 외력이 없다면, 두 부재 모두 무력부재입니다.</li>
 <li>경우 2: 한 절점에 3개의 부재가 연결되어 있고 그중 2개가 일직선상에 있다면, 나머지 1개는 무력부재입니다.</li>
 </ol>
-<h4 id="절점법-method-of-joints-적용하기">절점법 (Method of Joints) 적용하기 </h4>
+<h4 id="3223-절점법-method-of-joints-적용하기">3.2.2.3. 절점법 (Method of Joints) 적용하기 </h4>
 <ol>
 <li>미지 부재력이 <strong>2개 이하인 절점</strong>을 찾아 각각의 FBD를 그립니다.</li>
 <li>각 절점에서 x축, y축 힘의 평형조건 (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><msub><mi>F</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum F_x = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><msub><mi>F</mi><mi>y</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum F_y = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.0359em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>)을 세워 부재력을 순차적으로 구합니다.</li>
 <li>구한 부재력을 인접한 절점에 대입하며 순서대로 풀어갑니다.</li>
 </ol>
-<h4 id="단면법-method-of-sections-적용하기-특정-부재만-구할-때">단면법 (Method of Sections) 적용하기 (특정 부재만 구할 때) </h4>
+<h4 id="3224-단면법-method-of-sections-적용하기-특정-부재만-구할-때">3.2.2.4. 단면법 (Method of Sections) 적용하기 (특정 부재만 구할 때) </h4>
 <ol>
 <li>트러스 중간의 특정 부재들만 알고 싶을 때, 가상의 단면으로 트러스를 두 부분으로 자릅니다.</li>
 <li>잘린 한쪽의 FBD를 그리고, 미지 부재력이 3개 이하가 되도록 설정한 뒤 모멘트 평형방정식 (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∑</mo><mi>M</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum M = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop op-symbol small-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>) 등을 최우선으로 사용하여 원하는 부재력을 구합니다.</li>
