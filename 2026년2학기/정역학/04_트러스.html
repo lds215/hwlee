@@ -57,6 +57,7 @@
 <li>트러스(truss)</li>
 <li>부재 응력(부재력)</li>
 <li>무력부재</li>
+<li>지점(support)</li>
 </ol>
 <table>
 <thead>
@@ -93,7 +94,7 @@
 <td>3</td>
 <td>반력</td>
 <td>反 돌이킬 반 力 힘 력(역)</td>
-<td>외력(하중 or 무게)로 인해 트러스가 움직일 때, 트러스가 못 움직이게 막아주는 힘 <br>즉, 외력(주로 중력)의 <strong>반작용 힘</strong></td>
+<td>- 외력(하중 or 무게)로 인해 트러스가 움직일 때, 트러스가 못 움직이게 막아주는 힘 <br> - 즉, 외력(주로 중력)의 <strong>반작용 힘</strong></td>
 <td>Reaction Force</td>
 <td>-</td>
 <td>반력</td>
@@ -102,7 +103,7 @@
 <td>4</td>
 <td>내력</td>
 <td>內 안 내 力 힘 력(역)</td>
-<td>물체 <strong>내에서</strong> 서로 작용하는 힘 <br>외력의 반대 개념</td>
+<td>- 물체 <strong>내에서</strong> 서로 작용하는 힘 <br> - 외력의 반대 개념</td>
 <td>Internal Force</td>
 <td>-</td>
 <td>내력</td>
@@ -129,7 +130,7 @@
 <td>7</td>
 <td>축력</td>
 <td>軸 축</td>
-<td>축의 힘<br> 여기서 <strong>축은 부재(or member)를 가리킨다.</strong></td>
+<td>- 축의 힘<br> - 여기서 <strong>축은 부재(or member)를 가리킨다.</strong></td>
 <td>-</td>
 <td>-</td>
 <td>-</td>
@@ -138,9 +139,9 @@
 <td>8</td>
 <td>인장력과 압축력</td>
 <td>(引 끌 인 張 베풀 장), (壓 누를 압 縮 줄일 축)</td>
-<td>끌어서 늘인다는 뜻<br> 눌러서 줄인다는 뜻</td>
+<td>- 끌어서 늘인다는 뜻<br> - 눌러서 줄인다는 뜻</td>
 <td>Tension, Compression</td>
-<td>joint를 당기는 힘<br> joint를 누르는 힘</td>
+<td>- joint를 당기는 힘<br> - joint를 누르는 힘</td>
 <td>-</td>
 </tr>
 <tr>
@@ -165,7 +166,7 @@
 <td>11</td>
 <td>트러스</td>
 <td>-</td>
-<td>트러스(지붕·교량 따위를 버티기 위해 떠받치는 구조물)<br> 묶다, 고정하다</td>
+<td>- 트러스(지붕·교량 따위를 버티기 위해 떠받치는 구조물)<br> - 묶다, 고정하다</td>
 <td>truss</td>
 <td>여러 부재(member)를 삼각형 형태로 묶고 절점을 pin으로 연결하여 하중을 지지하는 <strong>빼대 구조</strong></td>
 <td>트러스</td>
@@ -187,6 +188,15 @@
 <td>zero-force member</td>
 <td>-</td>
 <td>무력부재</td>
+</tr>
+<tr>
+<td>14</td>
+<td>지점</td>
+<td>支 지탱할 지 點 점 점</td>
+<td>구조물이 지반이나 다른 구조물에 기대어 지지되는 부분</td>
+<td>support</td>
+<td>- 롤러 지점 (Roller support): 수직 반력 1개 (r = 1) <br> - 핀 지점 (Pin support, 힌지): 수직/수평 반력 2개 (r = 2)</td>
+<td>지점</td>
 </tr>
 </tbody>
 </table>
